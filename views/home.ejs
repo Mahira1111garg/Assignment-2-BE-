@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaBlog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="nav">
+        <h1>MetaBlog</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/add-post">Add Post</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <img src="/images/hero.jpg" alt="Hero Image">
+        <div class="hero-text">
+            <h2><%= posts[0].title %></h2>
+            <p>By <%= posts[0].author %> | <%= posts[0].date %></p>
+        </div>
+    </section>
+
+    <section class="latest-posts">
+        <h2>Latest Posts</h2>
+        <div class="posts-grid">
+            <% posts.forEach(post => { %>
+                <div class="post-card">
+                    <img src="<%= post.image %>" alt="Post Image">
+                    <h3><a href="/post?id=<%= post.id %>"><%= post.title %></a></h3>
+                    <p>By <%= post.author %> | <%= post.date %></p>
+                </div>
+            <% }) %>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 MetaBlog. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

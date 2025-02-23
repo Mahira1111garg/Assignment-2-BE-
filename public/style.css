@@ -1,0 +1,176 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #1c1c1c;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #00AEEF;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.hero-text h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* Latest Posts Section */
+.latest-posts {
+    padding: 40px 50px;
+}
+
+.latest-posts h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.post-card {
+    background: #1c1c1c;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.post-card:hover {
+    transform: scale(1.05);
+}
+
+.post-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.post-card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.post-card a {
+    text-decoration: none;
+    color: #00AEEF;
+}
+
+.post-card p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Single Post Page */
+.post {
+    padding: 40px 50px;
+}
+
+.post h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.post img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.post p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Form for Adding Posts */
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form button {
+    background: #00AEEF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button:hover {
+    background: #008CBA;
+}
+
+/* Footer */
+footer {
+    background: #1c1c1c;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
