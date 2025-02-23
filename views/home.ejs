@@ -20,7 +20,7 @@
 
 <main>
     <section class="hero">
-        <img src="/images/hero.jpg" alt="Hero Image">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/champagne-beach-espiritu-santo-island-vanuatu-royalty-free-image-1655672510.jpg" alt="Hero Image">
         <div class="hero-text">
             <h2><%= posts[0].title %></h2>
             <p>By <%= posts[0].author %> | <%= posts[0].date %></p>
@@ -32,7 +32,7 @@
         <div class="posts-grid">
             <% posts.forEach(post => { %>
                 <div class="post-card">
-                    <img src="<%= post.image %>" alt="Post Image">
+                    <img src="https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg?cs=srgb&dl=pexels-pixabay-302769.jpg&fm=jpg" alt="Post Image">
                     <h3><a href="/post?id=<%= post.id %>"><%= post.title %></a></h3>
                     <p>By <%= post.author %> | <%= post.date %></p>
                 </div>
